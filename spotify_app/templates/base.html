@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %">
+    <link rel="stylesheet" href="{% static 'css/comfortaa.css' %">
+    <title>Document</title>
+</head>
+<body>
+    <nav id="navigation">
+        <div class="widgets">
+            <a href="" mytitle="Главная">
+                <img src="{% static 'img/home.png' %}" alt="">
+            </a>
+            <a href="" mytitle="Поиск">
+                <img src="{% static 'img/pngwing.com.png' %}" alt="">
+            </a>
+        </div>
+        <div class="widgets" style="height: 80vh;">
+            <a href="" mytitle="Библиотека">
+                <img src="{% static 'img/icons.png' %}" alt="">
+            </a>
+        </div>
+    </nav>
+</body>
+</html>
