@@ -1,0 +1,53 @@
+body{
+    margin: 0;
+    background-color: black;
+}
+#navigation{
+    display: flex;
+    margin: 8px;
+    flex-direction: column;
+}
+.widgets{
+    width: 5vw;
+    height: 15vh;
+    background-color: #111;
+    border-radius: 10px;
+    margin: 5px;
+}
+.widgets:focus{
+    width: 20vw;
+}
+.widgets a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.widgets a img{
+    width: 2vw;
+    margin: 5px;
+}
+[mytitle] {
+    cursor: pointer;
+    z-index: 999;    
+    position: relative;
+
+}
+[mytitle]:after {
+    content: '';
+    transition: 0.3s;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+[mytitle]:hover:after {
+    border-radius: 10px;
+    display: flex;
+    content: attr(mytitle);
+    background-color: rgb(37, 35, 35);
+    padding: 10px;
+}
