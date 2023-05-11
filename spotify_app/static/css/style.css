@@ -2,6 +2,9 @@ body{
     margin: 0;
     background-color: black;
 }
+#all{
+    display: flex;
+}
 #navigation{
     display: flex;
     margin: 8px;
@@ -39,7 +42,7 @@ body{
 }
 [mytitle]:after {
     content: '';
-    transition: 0.3s;
+    transition: 0,5s;
     position: absolute;
     top: 40px;
     left: 40px;
@@ -50,4 +53,18 @@ body{
     content: attr(mytitle);
     background-color: rgb(37, 35, 35);
     padding: 10px;
+}
+.main{
+    width: 90vw;
+    height: 96vh;
+    background-color: #111;
+    border-radius: 10px;
+    margin: 12px;
+    display: flex;
+    flex-wrap: wrap;
+}   
+.enter a{
+    text-decoration: none;
+    color: aliceblue;
+    
 }
